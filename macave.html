@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Ma cave à vins en ligne</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/macaveavins.jpg" alt="Ma cave à vins" />
+    <nav class="blocnavbar">
+      <a class="menu" href="index.html"> Index </a>
+      <span class="trait">I</span>
+      <a class="selection" href="macave.html"> Ma cave</a>
+      <span class="trait">I</span>
+      <a class="menu" href="lexique.html"> Lexique </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="saisir_vin" id="form-section">
+      <h1>Encore une pépite à déguster&ensp;!</h1>
+      <form id="wine-form">
+        <input class="info" type="text" id="name" placeholder="Nom du vin" required />
+        <input type="text" id="region" placeholder="Région" required />
+        <input type="text" id="description" placeholder="Description" required />
+        <input type="number" id="year" placeholder="Millésime" required />
+        <select id="color" required>
+          <option value="">Couleur</option>
+          <option value="rouge">Rouge</option>
+          <option value="blanc">Blanc</option>
+          <option value="rosé">Rosé</option>
+        </select>
+        <input type="number" id="quantity" placeholder="Nombre de bouteilles" min="1" required />
+        <button type="submit">Ajouter</button>
+      </form>
+    </section>
+
+    <section class="macave" id="cellar-section">
+      <h2>Ma cave</h2>
+      <div id="wine-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

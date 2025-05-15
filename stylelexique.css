@@ -1,0 +1,32 @@
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    padding-bottom: 70px;
+}
+
+h2 {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  color: #365E37;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.textelexique {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+ul, li {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.espace {
+    margin-top: 10px;
+}

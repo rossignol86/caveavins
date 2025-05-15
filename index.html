@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Ma cave à vins en ligne</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/macaveavins.jpg" alt="Ma cave à vins" />
+  </header>
+
+  <body>
+      <main>
+          <div class="conteneurblocs">
+              <div class="bloc1">
+                  <img class="blocimage" src="images/cours-oenologie.jpg" alt="Photo d'un couple en train de déguster du vin">
+                  <h3>Ma cave personnelle</h3>
+                  <div>
+                    <a class="lienhtml" href="macave.html" onclick="verifierMotDePasse(event)">Explorer mes bouteilles</a>
+                  </div>
+              </div>
+
+
+              <div class="bloc2">
+                  <img class="blocimage" src="images/lexique2.jpg" alt="Photo de plusieurs bouteilles de vin">
+                  <h3>Le vin de A à Z </h3>
+                  <div>
+                      <a class="lienhtml" href="lexique.html"> Lexique du vin </a>
+                  </div>
+              </div>
+          </div>
+      </main>
+  </body>
+
+  <footer class="footerindex">
+        <div>
+            <p>Formation Développeur Web et Web Mobile - AFPA 2025</p>
+        </div>
+        <div>
+            <a class="textesite" href="https://rossignolfranck.alwaysdata.net/portfolio/" target="_blank">Franck Rossignol - Consulter mon site</a>
+        </div>
+  </footer>
+
+
+  <script>
+    function verifierMotDePasse(event) {
+      event.preventDefault(); // Empêche l'action par défaut du lien
+      const motDePasse = prompt("Veuillez entrer le mot de passe :");
+      if (motDePasse === "franck") {
+        window.location.href = "macave.html";
+      } else {
+        alert("Mot de passe incorrect.");
+      }
+    }
+  </script>
+</body>
+</html>

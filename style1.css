@@ -12,18 +12,19 @@ body{
 
 .conteneurblocs{
     width: 100%;
+    margin: 0 auto;
 }
 .bloc1{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 10px 0px 10px 0px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
     margin-bottom: 40px;
 }
 .bloc2{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 10px 0px 10px 0px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
@@ -37,7 +38,7 @@ body{
 
 
 .blocimage{
-    width: 400px;
+    width: 350px;
     margin-bottom: 20px;
 }
 
@@ -60,7 +61,7 @@ body{
 }
 
 .textesite{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     text-decoration: none;
     color:#F66960;

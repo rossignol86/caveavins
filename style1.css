@@ -12,7 +12,9 @@ body{
 
 .conteneurblocs{
     width: 100%;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
 }
 .bloc1{
     width: 350px;
@@ -35,13 +37,10 @@ body{
 .bloc2:hover {
     transform: scale(1.05);
 }
-
-
 .blocimage{
     width: 350px;
     margin-bottom: 20px;
 }
-
 .lienhtml{
     font-size: 20px;
     text-decoration: none;
@@ -54,12 +53,10 @@ body{
     width: 100%;
     margin-top: 50px;
 }
-
 .blocsite{
     height: 60px;
     padding: 10px;
 }
-
 .textesite{
     font-size: 18px;
     font-weight: 600;

@@ -176,3 +176,15 @@ button:hover {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+
+.evaluation {
+  display: flex;
+  cursor: pointer;
+  font-size: 2rem;
+  color: lightgray;
+}
+
+.evaluation span.selected {
+  color: #872020;
+}
